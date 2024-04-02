@@ -1,0 +1,24 @@
+:root {
+  --main-font: "Sora";
+  --grey-color: rgba(252, 252, 252, 0.394);
+  --black-color: black;
+  --white-color: white;
+  --padding-xl: 5vh 14vw;
+  --padding-xs: 5vh 14vw;
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  height: 40vh;
+  font-family: var(--main-font);
+  background-color: var(--black-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  flex-direction: column;
+  color: aliceblue;
+  padding: var(--padding-xs);
+}

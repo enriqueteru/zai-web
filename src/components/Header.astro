@@ -1,13 +1,14 @@
----
-import Hamburger from "./Hamburger.astro";
-import Navigation from "./Navigation.astro";
-import ThemeIcon from "./ThemeIcon.astro";
----
-
 <header>
-  <nav>
-    <Hamburger />
-    <ThemeIcon />
-    <Navigation />
+  <nav class="menu">
+    <a class="logo" href="/">
+      <img data-app="logo" src="/assets/logo.png" />
+    </a>
+    <div class="nav-trigger">
+      <div data-app="sidenav-open" class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
   </nav>
 </header>

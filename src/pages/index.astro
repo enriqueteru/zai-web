@@ -1,9 +1,33 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Greeting from '../components/Greeting';
-const pageTitle = "Home Page";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
-  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+
+<BaseLayout>
+  <div class="section section--top">
+    <div class="hero" >
+      <h2 class="super" data-app="reveal">Fotografías que cuentan vuestra historia</h2>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      <p class="text" data-app="reveal">
+        En Zai Fotografía, dirigida por Verónica Álvarez Sánchez, creemos que
+        los momentos más significativos merecen ser recordados tal como son, sin
+        artificios.
+      </p>
+      <div class="spacer"></div>
+      <p class="text" data-app="reveal">
+        Nos especializamos en capturar la esencia pura de la familia, las
+        mascotas, los retratos individuales y los eventos especiales, todo bajo
+        la luz natural que ofrece el entorno al aire libre. Nuestra filosofía se
+        centra en la autenticidad. Cada sesión fotográfica es una oportunidad
+        para contar una historia, tu historia, a través de imágenes cargadas de
+        emoción y naturalidad.
+      </p>
+      <div class="spacer"></div>
+      <p class="text" data-app="reveal">
+        Nos alejamos de los posados forzados y los fondos artificiales para
+        sumergirnos en escenarios naturales que realzan la belleza y la
+        singularidad de cada momento.
+      </p>
+    </div>
+  </div>
 </BaseLayout>

@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
+    "compile:sass": "sass src/styles/scss/global.scss src/styles/global.css -w",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -13,7 +14,11 @@
   "dependencies": {
     "@astrojs/preact": "^3.0.0",
     "@astrojs/rss": "^3.0.0",
-    "astro": "^3.1.1",
+    "astro": "^3.6.5",
+    "gsap": "^3.12.5",
     "preact": "^10.11.3"
+  },
+  "devDependencies": {
+    "sass": "^1.72.0"
   }
 }
