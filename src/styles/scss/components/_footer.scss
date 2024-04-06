@@ -11,14 +11,68 @@
   position: static;
   bottom: 0;
   width: 100%;
-  height: 40vh;
+  height: auto;
   font-family: var(--main-font);
   background-color: var(--black-color);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 50px;
   flex-direction: column;
+  gap: 50px;
   color: aliceblue;
   padding: var(--padding-xs);
+  flex: 1;
+
+  > * {
+    flex: 1;
+    flex-grow: 1;
+  }
+
+  > :first-child {
+    flex-grow: 3;
+  }
+
+  &__description{
+    max-width: 350px;
+  }
+
+  &__sublist {
+    display: flex;
+    gap: 10px;
+    &--column {
+      flex-direction: column;
+    }
+  }
+
+  &__header {
+    margin-bottom: 5px;
+  }
+
+  &__list {
+    &--item {
+      list-style: none;
+      margin-bottom: 5px;
+      a {
+        text-decoration: none;
+        color: aliceblue;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+    filter: invert(1);
+    max-height: 70px;
+    max-width: auto;
+  }
+}
+
+@include respond-to("desktop") {
+  .footer {
+    flex-direction: row;
+    height: 40vh;
+  }
 }

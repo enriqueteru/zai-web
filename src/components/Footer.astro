@@ -3,5 +3,49 @@ const today = new Date().getFullYear();
 ---
 
 <footer class="footer">
-  hola
+  <div>
+    <a href="/"
+      ><img
+        class="footer__logo"
+        src="/public/assets/logo.png"
+        alt="logo versión blanca"
+      /></a
+    >
+    <p class="small footer__description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptate
+      neque minima sapiente, id dolores ut unde a saepe at, delectus rerum
+      itaque consectetur, corporis sit. Laboriosam unde cum harum!
+    </p>
+  </div>
+
+  <div class="footer__sublist footer__sublist--column">
+    <h4 class="footer__header">Menu</h4>
+    <ul>
+      <li class="footer__list--item small"><a href="/">Inicio</a></li>
+      <li class="footer__list--item small"><a href="/sobre-mi">Sobre mí</a></li>
+      <li class="footer__list--item small">
+        <a href="/historias">Historias</a>
+      </li>
+      <li class="footer__list--item small"><a href="/blog">Blog</a></li>
+      <li class="footer__list--item small"><a href="/contacto">Contacto</a></li>
+    </ul>
+  </div>
+
+  <div class="footer__sublist footer__sublist--column">
+    <h4 class="footer__header">Legal</h4>
+    <ul>
+      <li class="footer__list--item small">
+        <a href="/politica-de-privacidad">Políticas de privacidad</a>
+      </li>
+      <li class="footer__list--item small">
+        <a href="/politica-de-cookies">Cookies</a>
+      </li>
+      <li class="footer__list--item small">
+        <a href="/aviso-legal">Aviso legal</a>
+      </li>
+      <li class="footer__list--item small">
+        <a href="/portal-de-denuncias">Portal de denuncias</a>
+      </li>
+    </ul>
+  </div>
 </footer>
